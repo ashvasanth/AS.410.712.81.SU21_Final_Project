@@ -1,0 +1,99 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>TypeError</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 3.7.3: /usr/local/bin/python3<br>Sat Jul 24 21:09:56 2021</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/html/avasant1/finalproj/getfheader.cgi">/var/www/html/avasant1/finalproj/getfheader.cgi</a> in <strong>&lt;module&gt;</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;25</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(json.dumps(result))<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;26</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;27</small>&nbsp;if&nbsp;__name__&nbsp;==&nbsp;'__main__':<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;28</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;29</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/html/avasant1/finalproj/getfheader.cgi">/var/www/html/avasant1/finalproj/getfheader.cgi</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;13</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;14</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;15</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;seq_record&nbsp;in&nbsp;SeqIO.parse(term,&nbsp;"fasta"):<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;16</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#print(seq_record.id)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;17</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#print(seq_record.description)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">seq_record <em>undefined</em>, <em>global</em> <strong>SeqIO</strong>&nbsp;= &lt;module 'Bio.SeqIO' from '/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/__init__.py'&gt;, SeqIO.<strong>parse</strong>&nbsp;= &lt;function parse&gt;, <strong>term</strong>&nbsp;= None</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/__init__.py">/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/__init__.py</a> in <strong>parse</strong>(handle=None, format='fasta', alphabet=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;659</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;ValueError("Unknown&nbsp;format&nbsp;'%s'"&nbsp;%&nbsp;format)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;660</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;imposes&nbsp;some&nbsp;overhead...&nbsp;wait&nbsp;until&nbsp;we&nbsp;drop&nbsp;Python&nbsp;2.4&nbsp;to&nbsp;fix&nbsp;it<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;661</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;r&nbsp;in&nbsp;i:<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;662</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;r<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;663</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">r <em>undefined</em>, <strong>i</strong>&nbsp;= &lt;generator object FastaIterator&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py">/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py</a> in <strong>FastaIterator</strong>(handle=None, alphabet=SingleLetterAlphabet(), title2ids=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;174</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id=id,&nbsp;name=name,&nbsp;description=descr)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;175</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;176</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;title,&nbsp;sequence&nbsp;in&nbsp;SimpleFastaParser(handle):<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;177</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;178</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first_word&nbsp;=&nbsp;title.split(None,&nbsp;1)[0]<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">title <em>undefined</em>, sequence <em>undefined</em>, <em>global</em> <strong>SimpleFastaParser</strong>&nbsp;= &lt;function SimpleFastaParser&gt;, <strong>handle</strong>&nbsp;= None</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py">/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py</a> in <strong>SimpleFastaParser</strong>(handle=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;43</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Skip&nbsp;any&nbsp;text&nbsp;before&nbsp;the&nbsp;first&nbsp;record&nbsp;(e.g.&nbsp;blank&nbsp;lines,&nbsp;comments)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;44</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;matches&nbsp;the&nbsp;previous&nbsp;implementation&nbsp;where&nbsp;.readline()&nbsp;was&nbsp;used<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;45</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;line&nbsp;in&nbsp;handle:<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;46</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;line[0]&nbsp;==&nbsp;'&gt;':<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;47</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;=&nbsp;line[1:].rstrip()<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">line <em>undefined</em>, <strong>handle</strong>&nbsp;= None</font></small></td></tr></table><p><strong>TypeError</strong>: 'NoneType' object is not iterable
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("'NoneType' object is not iterable",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>with_traceback&nbsp;=
+&lt;built-in method with_traceback of TypeError object&gt;
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "./getfheader.cgi", line 28, in &lt;module&gt;
+    main()
+  File "./getfheader.cgi", line 15, in main
+    for seq_record in SeqIO.parse(term, "fasta"):
+  File "/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/__init__.py", line 661, in parse
+    for r in i:
+  File "/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py", line 176, in FastaIterator
+    for title, sequence in SimpleFastaParser(handle):
+  File "/opt/Python-3.7.3/lib/python3.7/site-packages/Bio/SeqIO/FastaIO.py", line 45, in SimpleFastaParser
+    for line in handle:
+TypeError: 'NoneType' object is not iterable
+
+-->
