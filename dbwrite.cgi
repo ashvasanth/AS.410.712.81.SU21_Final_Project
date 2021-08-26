@@ -17,7 +17,7 @@ def main():
     term = form.getvalue('data')
     
     try:   
-        conn = mysql.connector.connect(user='avasant1', password='Amoeba@06', host='localhost', database='avasant1')
+        conn = mysql.connector.connect(user='abc', password='xyz', host='localhost', database='db1')
         cursor = conn.cursor()
         
         qry1 = """
